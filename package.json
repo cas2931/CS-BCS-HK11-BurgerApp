@@ -1,0 +1,25 @@
+{
+  "name": "CS-BCS-HK11-BurgerApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cas2931/CS-BCS-HK11-BurgerApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cas2931/CS-BCS-HK11-BurgerApp/issues"
+  },
+  "homepage": "https://github.com/cas2931/CS-BCS-HK11-BurgerApp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1"
+  }
+}
