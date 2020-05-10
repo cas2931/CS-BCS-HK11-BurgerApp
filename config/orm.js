@@ -28,13 +28,14 @@ function printQuestionMarks(num) {
         arr.push(key + "=" + value);
       }
     }
+    
   
     // translate array of strings to a single comma-separated string
     return arr.toString();
   }
 var orm = {
     selectAll: function(tableInput, cb) {
-        var queryString = 'SELECT * FROM' + tableInput + ';';
+        var queryString = "SELECT * FROM " + tableInput;
         connection.query(queryString, function(err, result) {
             if (err) {
                 throw err;
@@ -44,7 +45,7 @@ var orm = {
     },
 
     insertOne: function(tableInput, cols, vals, cb) {
-        var queryString = 'INSERT INTO' + tableInput; 
+        var queryString = "INSERT INTO " + tableInput; 
 
         queryString += " (";
         queryString += cols.toString();

@@ -1,0 +1,40 @@
+<h1 class ="text-center">So Many 🍔's, So Little ⏲️!</h1>
+
+<main>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        {{#each burgers}}
+          {{#unless this.devoured}}
+            <div>
+                <button type="submit" class="btn btn-success" id="devourButton">{{this.burger_name}}</button>
+            </div>
+          {{/unless}}
+        {{/each}}
+      </div>
+
+      <div class="col-md-6">
+        {{#each burgers}}
+          {{#if this.devoured}}
+            <div class='burgerEaten'>
+              <div>
+                <button type="submit" class="btn btn-danger">{{this.burger_name}}</button>
+              </div>
+            </div>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</main>
+
+<h2 class ="text-center">Add A Burger Option</h2>
+
+<div class="row, text-center">
+  <div class="col">
+    <form action="/api/burgers" method="POST">
+      <input type="text" id="name" name="burger_name">
+      <button type="submit" class="addBurgerButton">Add The Burger</button>
+    </form>
+  </div>
+</div>
