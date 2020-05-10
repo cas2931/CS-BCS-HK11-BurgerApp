@@ -3,22 +3,27 @@
 <main>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6"> 
+        <h3>Burgers Deferred</h3> 
+        <p class = "alert alert-primary" role="alert">Click on a burger to devour it!</p>
         {{#each burgers}}
           {{#unless this.devoured}}
-            <div>
-                <button type="submit" class="btn btn-success" id="devourButton">{{this.burger_name}}</button>
+            <div> 
+             <form action="/api/burgers/{{this.id}}?_method=PUT" method="POST">
+                <button type="submit" class="btn btn-success">{{this.burger_name}}</button> 
+              </form>
             </div>
           {{/unless}}
         {{/each}}
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6"> 
+        <h3>Burgers Devoured</h3>
         {{#each burgers}}
           {{#if this.devoured}}
             <div class='burgerEaten'>
-              <div>
-                <button type="submit" class="btn btn-danger">{{this.burger_name}}</button>
+              <div> 
+                <button type="submit" class="btn btn-warning">{{this.burger_name}}</button> 
               </div>
             </div>
           {{/if}}

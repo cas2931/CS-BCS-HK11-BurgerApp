@@ -1,19 +1,9 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
-}
-
-.label {
-  font-weight: bold;
-}
-
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-}
-
-.form-group {
-  margin-bottom: 5px;
+.container-fluid {
+  background-image: url(https://www.wallpaperflare.com/static/722/555/827/simple-background-minimalism-red-background-hamburgers-wallpaper.jpg);
+  display: block;
+  margin: auto; 
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
